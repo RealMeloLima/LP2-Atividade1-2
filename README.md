@@ -44,7 +44,7 @@ Ambas as classes utilizam arrays de forma manual (busca linear e deslocamento de
 
 Siga os passos abaixo, garantindo que você está no diretório **`src/`** (o diretório que contém a pasta `br/`).
 
-### 1. Compilação
+### 1. Compilação e Execução
 
 Use o `javac` para compilar todos os arquivos, garantindo que o compilador encontre todas as classes dependentes.
 
@@ -57,5 +57,5 @@ javac br/universidade/repo/app/Main.java \
       br/universidade/repo/repositorio/RepositorioAlunoArray.java \
       br/universidade/repo/repositorio/RepositorioLivroArray.java
 
-# Executa a classe principal
+## Execute a classe principal
 java -cp . br.universidade.repo.app.Main
