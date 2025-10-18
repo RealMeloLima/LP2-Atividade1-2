@@ -6,7 +6,11 @@ import br.universidade.repo.repositorio.Repositorio;
 import br.universidade.repo.repositorio.RepositorioAlunoArray;
 import br.universidade.repo.repositorio.RepositorioLivroArray;
 
-
+/**
+ * Classe principal para demonstrar o uso das Interfaces e Múltiplas Implementações.
+ * Esta versão não utiliza try/catch (NegocioException), tratando erros via
+ * mensagens de console e retorno booleano dos métodos.
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -34,7 +38,7 @@ public class Main {
         String matriculaBusca = "2024002";
         Aluno alunoEncontrado = (Aluno) repoAluno.buscar(matriculaBusca);
         if (alunoEncontrado != null) {
-            System.out.println("\n Aluno encontrado (Chave " + matriculaBusca + "): " + alunoEncontrado);
+            System.out.println("\n🔍 Aluno encontrado (Chave " + matriculaBusca + "): " + alunoEncontrado);
         } else {
             System.out.println("\nAluno com matrícula " + matriculaBusca + " não encontrado.");
         }
@@ -44,7 +48,7 @@ public class Main {
 
         System.out.println("\n--- LISTAGEM APÓS REMOÇÃO (" + repoAluno.listar().length + " itens) ---");
         imprimirLista(repoAluno.listar());
-        
+
         System.out.print("\n[TESTE ERRO] Tentando remover Aluno 999999: \n");
         repoAluno.remover("999999");
             
@@ -69,9 +73,9 @@ public class Main {
         String tituloBusca = "1984";
         Livro livroEncontrado = (Livro) repoLivro.buscar(tituloBusca);
         if (livroEncontrado != null) {
-            System.out.println("\ Livro encontrado (Chave '" + tituloBusca + "'): " + livroEncontrado);
+            System.out.println("\n Livro encontrado (Chave '" + tituloBusca + "'): " + livroEncontrado);
         } else {
-            System.out.println("\nLivro com título " + tituloBusca + " não encontrado.");
+            System.out.println("\n Livro com título " + tituloBusca + " não encontrado.");
         }
 
         String tituloRemover = "A Arte da Guerra";
