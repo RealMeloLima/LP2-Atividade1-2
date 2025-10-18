@@ -56,3 +56,6 @@ javac br/universidade/repo/app/Main.java \
       br/universidade/repo/repositorio/Repositorio.java \
       br/universidade/repo/repositorio/RepositorioAlunoArray.java \
       br/universidade/repo/repositorio/RepositorioLivroArray.java
+
+# Executa a classe principal
+java -cp . br.universidade.repo.app.Main
